@@ -27,6 +27,8 @@ let appleY = 5;
 
 let score = 0;
 
+const gulpSound = new Audio("gulp.mp3");
+
 //game loop
 function drawGame() {
   changeSnakePosition();
@@ -140,6 +142,8 @@ function changeAppleCollision() {
     tailLength++;
     //increase the score
     score++;
+    //play the sound
+    gulpSound.play();
   }
 }
 
